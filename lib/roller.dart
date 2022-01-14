@@ -11,51 +11,61 @@ class RollSpec {
 }
 
 mixin Roller {
+    RollSpec? ParseStr(String roll_str)
+    {
+        RollSpec rs = RollSpec();
+        RegExp roll_expr = RegExp(r'\s*(\d+)?\s*([dD])\s*(\d+)\s*(.*)?');
+        RegExpMatch? matches = roll_expr.firstMatch(roll_str);
+        if (matches == null) {
+            print("I don't understand the die-roll expression: ${roll_str}");
+            return null;
+        }
+        var match = matches!;
+        if (match.group(1) != null)
+            rs.n_dice = int.parse(match.group(1)!);
+        rs.die = int.parse(match.group(3)!);
+        if (match.group(4) != null) {
+            RegExp mod_expr = RegExp(r'\s*([rRkK+-])\s*(\d+)');
+            Iterable<RegExpMatch> mods = mod_expr.allMatches(match.group(4)!);
+            for (final mod in mods) {
+                int value = int.parse(mod.group(2)!);
+                switch (mod.group(1)) {
+                    case 'r':
+                    case 'R': {
+                        rs.reroll = value;
+                    }
+                    break;
+                    case 'k':
+                    case 'K': {
+                        rs.drop_dice = rs.n_dice - value;
+                    }
+                    break;
+                    case '+': {
+                        rs.bonus = value;
+                    }
+                    break;
+                    case '-': {
+                        rs.bonus = -value;
+                    }
+                    break;
+                }
+            }
+        }
+        return rs;
+    }
     /** \brief Roll dice based on str <ndice> d <die> [r reroll k keep +- bonus]
     */
     int RollStr(String roll_str)
     {
-        RollSpec rs = RollSpec();
+        RollSpec? rs = null;
         if (roll_str.length != 0) {
-            RegExp roll_expr = RegExp(r'\s*(\d+)?\s*([dD])\s*(\d+)\s*(.*)?');
-            RegExpMatch? matches = roll_expr.firstMatch(roll_str);
-            if (matches == null) {
-                print("I don't understand the die-roll expression: ${roll_str}");
-                return 0;
-            }
-            var match = matches!;
-            if (match.group(1) != null)
-                rs.n_dice = int.parse(match.group(1)!);
-            rs.die = int.parse(match.group(3)!);
-            if (match.group(4) != null) {
-                RegExp mod_expr = RegExp(r'\s*([rRkK+-])\s*(\d+)');
-                Iterable<RegExpMatch> mods = mod_expr.allMatches(match.group(4)!);
-                for (final mod in mods) {
-                    int value = int.parse(mod.group(2)!);
-                    switch (mod.group(1)) {
-                        case 'r':
-                        case 'R': {
-                            rs.reroll = value;
-                        }
-                        break;
-                        case 'k':
-                        case 'K': {
-                            rs.drop_dice = rs.n_dice - value;
-                        }
-                        break;
-                        case '+': {
-                            rs.bonus = value;
-                        }
-                        break;
-                        case '-': {
-                            rs.bonus = -value;
-                        }
-                        break;
-                    }
-                }
-            }
+            rs = ParseStr(roll_str);
+        } else {
+            rs = RollSpec();
         }
-        return Roll(rs);
+        if (rs == null)
+            return 0;
+        return Roll(rs!);
     }
 
     int Roll(RollSpec rs) {
