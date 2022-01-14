@@ -2,13 +2,17 @@ import 'roller.dart';
 
 class Attribute with Roller {
     Attribute([String this._name = "", String roll_str = "3d6"]) {
-        _value = RollStr(roll_str);
+        value = RollStr(roll_str);
+    }
+    int ReRoll([String roll_str = "3d6"]) {
+        value = RollStr(roll_str);
+        return value;
     }
     void Describe() {
-        print ("$_name = $_value");
+        print ("$_name = $value");
     }
     String _name;
-    int _value = 0;
+    int value = 0;
 }
 
 class Attributes {
