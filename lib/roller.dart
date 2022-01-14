@@ -58,7 +58,7 @@ mixin Roller {
         do {
             for (int c = 0; c < n_dice; ++c) {
                 values[c] = rnd.nextInt(die) + 1;
-                if (reroll != 0 && values[c] == reroll)
+                if (reroll != 0 && values[c] <= reroll)
                     values[c] = rnd.nextInt(die) + 1;
             }
             print(values);
