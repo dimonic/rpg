@@ -2,15 +2,15 @@ import '../lib/attribute.dart';
 
 void main(List<String> arguments) {
   Attribute str = Attribute("Strength", "4d6k3");
-  str.Describe();
+  str.describe();
   Attribute dex = Attribute("Dexterity", "4d6k3");
-  dex.Describe();
+  dex.describe();
   Attribute con = Attribute("Constitution", "4d6k3");
-  con.Describe();
+  con.describe();
   Attribute int = Attribute("Intelligence", "4d6k3");
-  int.Describe();
+  int.describe();
   Attribute wis = Attribute("Wisdom", "4d6k3");
-  wis.Describe();
+  wis.describe();
   Attribute cha = Attribute("Charisma", "4d6k3");
-  cha.Describe();
-  }
+  cha.describe();
+}
