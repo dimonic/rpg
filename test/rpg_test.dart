@@ -28,7 +28,7 @@ void main() {
     expect(sum / rolls, lessThan(12));
     print(stats);
   });
-  test('Single die without specifier', () {
+  test('Single die without ndice', () {
     char.ReRoll("d20");
     expect(char.value, lessThan(21));
     expect(char.value, greaterThan(0));
@@ -38,5 +38,9 @@ void main() {
     expect(char.value, lessThan(7));
     expect(char.value, greaterThan(0));
   });
-
+  test('Multiple roll expressions', () {
+    char.ReRoll("2d6 + 2d6");
+    expect(char.value, greaterThan(3));
+    expect(char.value, lessThan(25));
+  });
 }
