@@ -63,7 +63,7 @@ mixin Roller {
     return rs;
   }
 
-  Iterable<RollSpec> parseStr(String rollStr) {
+  Iterable<RollSpec> parseRollStr(String rollStr) {
     List<RollSpec> rss = <RollSpec>[];
     RollSpec? rs;
     RegExp rollExpr = RegExp(r'\s*([^\s]*)(\s+\+)?');
@@ -82,7 +82,7 @@ mixin Roller {
     if (rollStr.isEmpty) {
       res = roll(RollSpec());
     } else {
-      Iterable<RollSpec> rss = parseStr(rollStr);
+      Iterable<RollSpec> rss = parseRollStr(rollStr);
       for (final rs in rss) {
         res += roll(rs);
       }
