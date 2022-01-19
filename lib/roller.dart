@@ -69,7 +69,7 @@ mixin Roller {
     RegExp rollExpr = RegExp(r'\s*([^\s]*)(\s+\+)?');
     Iterable<RegExpMatch> matches = rollExpr.allMatches(rollStr);
     for (final match in matches) {
-      print(match.input.substring(match.start, match.end));
+      // print(match.input.substring(match.start, match.end));
       rs = parseDieExpr(match.input.substring(match.start, match.end));
       if (rs != null) rss.add(rs);
     }
@@ -77,7 +77,7 @@ mixin Roller {
   }
 
   /// \brief roll dice based on str <ndice> d <die> [r reroll k keep +- bonus]
-  int RollStr(String rollStr) {
+  int rollDiceStr(String rollStr) {
     int res = 0;
     if (rollStr.isEmpty) {
       res = roll(RollSpec());
@@ -99,14 +99,14 @@ mixin Roller {
         values[c] = rnd.nextInt(rs.die) + 1;
         if (values[c] <= rs.reroll) values[c] = rnd.nextInt(rs.die) + 1;
       }
-      print(values);
+      // print(values);
       values.sort();
       result = values
               .sublist(rs.dropDice)
               .reduce((value, element) => value + element) +
           rs.bonus;
     } while (result < rs.minTotal);
-    print(result);
+    // print(result);
     return result;
   }
 }
