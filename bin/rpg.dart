@@ -10,4 +10,9 @@ void main(List<String> arguments) {
   elf.describe();
   res = elf.evalPoints(pointCost1e);
   print("Point value for 3d6 in AD&D: $res");
+
+  Attributes dwarf = Attributes('conf/adnd-races.json', 'Dwarf');
+  dwarf.describe();
+  res = dwarf.evalPoints(pointCost1e);
+  print("Point value for 3d6 in AD&D: $res");
 }
