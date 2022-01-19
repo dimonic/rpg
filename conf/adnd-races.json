@@ -3,31 +3,45 @@
         "attribute": [
             {
                 "name": "Strength",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Intelligence",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Wisdom",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Dexterity",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Constitution",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Charisma",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Comeliness",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             }
         ]
     },
@@ -35,31 +49,47 @@
         "attribute": [
             {
                 "name": "Strength",
-                "roll": "4d6k3>7"
+                "roll": "4d6k3",
+                "min": 8,
+                "max": 18
             },
             {
                 "name": "Intelligence",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Wisdom",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Dexterity",
-                "roll": "4d6k3<18"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 17
             },
             {
                 "name": "Constitution",
-                "roll": "4d6k3+1>11"
+                "roll": "4d6k3",
+                "min": 12,
+                "max": 19,
+                "bonus": 1
             },
             {
                 "name": "Charisma",
-                "roll": "4d6k3-1>2<17"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 16,
+                "bonus": -1
             },
             {
                 "name": "Comeliness",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             }
         ]
     },
@@ -67,33 +97,47 @@
         "attribute": [
             {
                 "name": "Strength",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Intelligence",
-                "roll": "4d6k3>7",
+                "roll": "4d6k3",
                 "min": 8,
                 "max": 18
             },
             {
                 "name": "Wisdom",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Dexterity",
-                "roll": "4d6k3+1>6"
+                "roll": "4d6k3",
+                "min": 7,
+                "max": 19,
+                "bonus": 1
             },
             {
                 "name": "Constitution",
-                "roll": "4d6k3-1>5"
+                "roll": "4d6k3",
+                "min": 6,
+                "max": 18,
+                "bonus": -1
             },
             {
                 "name": "Charisma",
-                "roll": "4d6k3>7"
+                "roll": "4d6k3",
+                "min": 8,
+                "max": 18
             },
             {
                 "name": "Comeliness",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             }
         ]
     },
@@ -101,31 +145,45 @@
         "attribute": [
             {
                 "name": "Strength",
-                "roll": "4d6k3>5"
+                "roll": "4d6k3",
+                "min": 6,
+                "max": 18
             },
             {
                 "name": "Intelligence",
-                "roll": "4d6k3>6"
+                "roll": "4d6k3",
+                "min": 7,
+                "max": 18
             },
             {
                 "name": "Wisdom",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Dexterity",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Constitution",
-                "roll": "4d6k3>7"
+                "roll": "4d6k3",
+                "min": 8,
+                "max": 18
             },
             {
                 "name": "Charisma",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Comeliness",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             }
         ]
     },
@@ -133,31 +191,45 @@
         "attribute": [
             {
                 "name": "Strength",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Intelligence",
-                "roll": "4d6k3>3"
+                "roll": "4d6k3",
+                "min": 4,
+                "max": 18
             },
             {
                 "name": "Wisdom",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Dexterity",
-                "roll": "4d6k3>5"
+                "roll": "4d6k3",
+                "min": 6,
+                "max": 18
             },
             {
                 "name": "Constitution",
-                "roll": "4d6k3>5"
+                "roll": "4d6k3",
+                "min": 6,
+                "max": 18
             },
             {
                 "name": "Charisma",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 16
             },
             {
                 "name": "Comeliness",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             }
         ]
     },
@@ -165,31 +237,47 @@
         "attribute": [
             {
                 "name": "Strength",
-                "roll": "4d6k3-1>5"
+                "roll": "4d6k3",
+                "min": 6,
+                "max": 17,
+                "bonus": -1
             },
             {
                 "name": "Intelligence",
-                "roll": "4d6k3>5"
+                "roll": "4d6k3",
+                "min": 6,
+                "max": 18
             },
             {
                 "name": "Wisdom",
-                "roll": "4d6k3<18"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 17
             },
             {
                 "name": "Dexterity",
-                "roll": "4d6k3+1>7"
+                "roll": "4d6k3",
+                "min": 8,
+                "max": 18,
+                "bonus": 1
             },
             {
                 "name": "Constitution",
-                "roll": "4d6k3>9<20"
+                "roll": "4d6k3",
+                "min": 10,
+                "max": 19
             },
             {
                 "name": "Charisma",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             },
             {
                 "name": "Comeliness",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             }
         ]
     },
@@ -197,31 +285,48 @@
         "attribute": [
             {
                 "name": "Strength",
-                "roll": "4d6k3+1>5"
+                "roll": "4d6k3",
+                "min": 6,
+                "max": 18,
+                "bonus": 1
             },
             {
                 "name": "Intelligence",
-                "roll": "4d6k3<18"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 17
             },
             {
                 "name": "Wisdom",
-                "roll": "4d6k3<15"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 14
             },
             {
                 "name": "Dexterity",
-                "roll": "4d6k3<18"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 17
             },
             {
                 "name": "Constitution",
-                "roll": "4d6k3+1>12"
+                "roll": "4d6k3",
+                "min": 13,
+                "max": 19,
+                "bonus": 1
             },
             {
                 "name": "Charisma",
-                "roll": "4d6k3-2<13"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 12,
+                "bonus": -2
             },
             {
                 "name": "Comeliness",
-                "roll": "4d6k3"
+                "roll": "4d6k3",
+                "min": 3,
+                "max": 18
             }
         ]
     }
