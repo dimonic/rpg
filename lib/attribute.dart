@@ -4,6 +4,7 @@ import 'dart:io';
 
 class Attribute with Roller {
   Attribute([this._name = "", String roll = "3d6"]) {
+    print("Rolling $roll for $_name");
     value = rollDiceStr(roll);
   }
   int reRoll([String roll = "3d6"]) {
@@ -94,7 +95,7 @@ class Attributes {
     var chosen = charMap[race];
     var attributes = chosen["attribute"];
     for (final attr in attributes) {
-      _attributes.add(Attribute(attr["name"], attr["roll"]));
+      _attributes.add(Attribute(attr["name"], attr["roll_ni"]));
     }
   }
 
