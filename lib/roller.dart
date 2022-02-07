@@ -21,7 +21,7 @@ class RollSpec {
 mixin Roller {
   RollSpec? parseDieExpr(String dieStr) {
     RollSpec rs = RollSpec();
-    RegExp rollExpr = RegExp(r'\s*(\d+)?([dD])(\d+)([^\s]*)?');
+    RegExp rollExpr = RegExp(r'\s*(\d+)?(([dD])(\d+))?([^\s]*)?');
     final matchIf = rollExpr.firstMatch(dieStr);
     if (matchIf == null) {
       return null;
@@ -30,10 +30,10 @@ mixin Roller {
     if (match.group(1) != null) {
       rs.nDice = int.parse(match.group(1)!);
     }
-    rs.die = int.parse(match.group(3)!);
-    if (match.group(4) != null) {
-      RegExp modExpr = RegExp(r'\s*([rRkK+-])(\d+)');
-      Iterable<RegExpMatch> mods = modExpr.allMatches(match.group(4)!);
+    if (match.group(2) == null) rs.die = 1;
+    if (match.group(5) != null) {
+      RegExp modExpr = RegExp(r'\s*([rRkK+-<>])(\d+)');
+      Iterable<RegExpMatch> mods = modExpr.allMatches(match.group(5)!);
       for (final mod in mods) {
         int value = int.parse(mod.group(2)!);
         switch (mod.group(1)) {

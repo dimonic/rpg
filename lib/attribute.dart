@@ -4,7 +4,6 @@ import 'dart:io';
 
 class Attribute with Roller {
   Attribute([this._name = "", String roll = "3d6"]) {
-    print("Rolling $roll for $_name");
     value = rollDiceStr(roll);
   }
   int reRoll([String roll = "3d6"]) {
@@ -19,33 +18,6 @@ class Attribute with Roller {
   String _name;
   int value = 0;
 }
-
-const charGen5e = {
-  'Strength': '4d6k3',
-  'Dexterity': '4d6k3',
-  'Constitution': '4d6k3',
-  'Intelligence': '4d6k3',
-  'Wisdom': '4d6k3',
-  'Charisma': '4d6k3'
-};
-
-const charGen1e = {
-  'Strength': '4d6k3',
-  'Intelligence': '4d6k3',
-  'Wisdom': '4d6k3',
-  'Dexterity': '4d6k3',
-  'Constitution': '4d6k3',
-  'Charisma': '4d6k3'
-};
-
-const charGenUaCavalier = {
-  'Strength': '8d6k3',
-  'Intelligence': '6d6k3',
-  'Wisdom': '4d6k3',
-  'Dexterity': '7d6k3',
-  'Constitution': '9d6k3',
-  'Charisma': '3d6k3'
-};
 
 const List<int> pointCost5e = [
   -5,
@@ -88,11 +60,11 @@ const List<int> pointCost1e = [
 ];
 
 class Attributes {
-  Attributes(String fileName, String race) : _attributes = [] {
+  Attributes(String fileName, this._race) : _attributes = [] {
     var file = File(fileName);
     String json = file.readAsStringSync(encoding: ascii);
     var charMap = jsonDecode(json);
-    var chosen = charMap[race];
+    var chosen = charMap[_race];
     var attributes = chosen["attribute"];
     for (final attr in attributes) {
       _attributes.add(Attribute(attr["name"], attr["roll_ni"]));
@@ -106,6 +78,7 @@ class Attributes {
   }
 
   void describe() {
+    print(_race);
     for (final attr in _attributes) {
       attr.describe();
     }
@@ -121,5 +94,6 @@ class Attributes {
     return res;
   }
 
+  final String _race;
   List<Attribute> _attributes;
 }

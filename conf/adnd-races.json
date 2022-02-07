@@ -49,15 +49,15 @@
         "attribute": [
             {
                 "name": "Strength",
+                "roll_ni": "4d6k3>8",
                 "roll": "4d6k3",
-                "roll_ni": "4d6k3>7",
                 "min": 8,
                 "max": 18
             },
             {
                 "name": "Intelligence",
-                "roll": "4d6k3",
                 "roll_ni": "4d6k3",
+                "roll": "4d6k3",
                 "min": 3,
                 "max": 18
             },
@@ -70,14 +70,14 @@
             },
             {
                 "name": "Dexterity",
-                "roll_ni": "4d6k3<18",
+                "roll_ni": "4d6k3<17",
                 "roll": "4d6k3",
                 "min": 3,
                 "max": 17
             },
             {
                 "name": "Constitution",
-                "roll_ni": "4d6k3+1>11",
+                "roll_ni": "4d6k3+1>12",
                 "roll": "4d6k3",
                 "min": 12,
                 "max": 19,
@@ -85,7 +85,7 @@
             },
             {
                 "name": "Charisma",
-                "roll_ni": "4d6k3-1<17>2",
+                "roll_ni": "4d6k3-1<17>3",
                 "roll": "4d6k3",
                 "min": 3,
                 "max": 16,
@@ -104,7 +104,7 @@
             },
             {
                 "name": "Intelligence",
-                "roll_ni": "4d6k3>7",
+                "roll_ni": "4d6k3>8",
                 "roll": "4d6k3",
                 "min": 8,
                 "max": 18
@@ -118,7 +118,7 @@
             },
             {
                 "name": "Dexterity",
-                "roll_ni": "4d6k3+1>6",
+                "roll_ni": "4d6k3+1>7",
                 "roll": "4d6k3",
                 "min": 7,
                 "max": 19,
@@ -126,7 +126,7 @@
             },
             {
                 "name": "Constitution",
-                "roll_ni": "4d6k3-1>5",
+                "roll_ni": "4d6k3-1>6",
                 "roll": "4d6k3",
                 "min": 6,
                 "max": 18,
@@ -134,7 +134,7 @@
             },
             {
                 "name": "Charisma",
-                "roll_ni": "4d6k3>7",
+                "roll_ni": "4d6k3>8",
                 "roll": "4d6k3",
                 "min": 8,
                 "max": 18
@@ -145,14 +145,14 @@
         "attribute": [
             {
                 "name": "Strength",
-                "roll_ni": "4d6k3>5",
+                "roll_ni": "4d6k3>6",
                 "roll": "4d6k3",
                 "min": 6,
                 "max": 18
             },
             {
                 "name": "Intelligence",
-                "roll_ni": "4d6k3>6",
+                "roll_ni": "4d6k3>7",
                 "roll": "4d6k3",
                 "min": 7,
                 "max": 18
@@ -173,7 +173,7 @@
             },
             {
                 "name": "Constitution",
-                "roll_ni": "4d6k3>7",
+                "roll_ni": "4d6k3>8",
                 "roll": "4d6k3",
                 "min": 8,
                 "max": 18
@@ -198,7 +198,7 @@
             },
             {
                 "name": "Intelligence",
-                "roll_ni": "4d6k3>3",
+                "roll_ni": "4d6k3>4",
                 "roll": "4d6k3",
                 "min": 4,
                 "max": 18
@@ -212,14 +212,14 @@
             },
             {
                 "name": "Dexterity",
-                "roll_ni": "4d6k3>5",
+                "roll_ni": "4d6k3>6",
                 "roll": "4d6k3",
                 "min": 6,
                 "max": 18
             },
             {
                 "name": "Constitution",
-                "roll_ni": "4d6k3>5",
+                "roll_ni": "4d6k3>6",
                 "roll": "4d6k3",
                 "min": 6,
                 "max": 18
@@ -237,7 +237,7 @@
         "attribute": [
             {
                 "name": "Strength",
-                "roll_ni": "4d6k3-1>5",
+                "roll_ni": "4d6k3-1>6",
                 "roll": "4d6k3",
                 "min": 6,
                 "max": 17,
@@ -245,21 +245,21 @@
             },
             {
                 "name": "Intelligence",
-                "roll_ni": "4d6k3>5",
+                "roll_ni": "4d6k3>6",
                 "roll": "4d6k3",
                 "min": 6,
                 "max": 18
             },
             {
                 "name": "Wisdom",
-                "roll_ni": "4d6k3<18",
+                "roll_ni": "4d6k3<17",
                 "roll": "4d6k3",
                 "min": 3,
                 "max": 17
             },
             {
                 "name": "Dexterity",
-                "roll_ni": "4d6k3+1>7<19",
+                "roll_ni": "4d6k3+1>8<19",
                 "roll": "4d6k3",
                 "min": 8,
                 "max": 18,
@@ -267,7 +267,7 @@
             },
             {
                 "name": "Constitution",
-                "roll_ni": "4d6k3>9",
+                "roll_ni": "4d6k3>10",
                 "roll": "4d6k3",
                 "min": 10,
                 "max": 19
@@ -285,7 +285,7 @@
         "attribute": [
             {
                 "name": "Strength",
-                "roll_ni": "4d6k3+1>5",
+                "roll_ni": "4d6k3+1>6",
                 "roll": "4d6k3",
                 "min": 6,
                 "max": 18,
@@ -293,28 +293,28 @@
             },
             {
                 "name": "Intelligence",
-                "roll_ni": "4d6k3<18",
+                "roll_ni": "4d6k3<17",
                 "roll": "4d6k3",
                 "min": 3,
                 "max": 17
             },
             {
                 "name": "Wisdom",
-                "roll_ni": "4d6k3<15",
+                "roll_ni": "4d6k3<16",
                 "roll": "4d6k3",
                 "min": 3,
                 "max": 14
             },
             {
                 "name": "Dexterity",
-                "roll_ni": "4d6k3<18",
+                "roll_ni": "4d6k3<17",
                 "roll": "4d6k3",
                 "min": 3,
                 "max": 17
             },
             {
                 "name": "Constitution",
-                "roll_ni": "4d6k3+1>12",
+                "roll_ni": "4d6k3+1>13",
                 "roll": "4d6k3",
                 "min": 13,
                 "max": 19,
@@ -322,7 +322,7 @@
             },
             {
                 "name": "Charisma",
-                "roll_ni": "4d6k3-2>2<13",
+                "roll_ni": "4d6k3-2>3<14",
                 "roll": "4d6k3",
                 "min": 3,
                 "max": 12,
